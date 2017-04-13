@@ -12,6 +12,7 @@
 		88A797171E9F172A0045F262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A797161E9F172A0045F262 /* Assets.xcassets */; };
 		88A7971A1E9F172A0045F262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A797181E9F172A0045F262 /* LaunchScreen.storyboard */; };
 		9EA541FC1E9F199A00291DE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA541FB1E9F199A00291DE8 /* LoginViewController.swift */; };
+		9EA541FE1E9F24A000291DE8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA541FD1E9F24A000291DE8 /* ChatViewController.swift */; };
 		BA5F95AC5DAA70320A952B0F /* Pods_ChatCDPTH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDA53D623285F963B4BBC2D /* Pods_ChatCDPTH.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		88A797191E9F172A0045F262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88A7971B1E9F172A0045F262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EA541FB1E9F199A00291DE8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9EA541FD1E9F24A000291DE8 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E5BED730D46EAE2112728A5B /* Pods-ChatCDPTH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatCDPTH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatCDPTH/Pods-ChatCDPTH.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				88A797181E9F172A0045F262 /* LaunchScreen.storyboard */,
 				88A7971B1E9F172A0045F262 /* Info.plist */,
 				9EA541FB1E9F199A00291DE8 /* LoginViewController.swift */,
+				9EA541FD1E9F24A000291DE8 /* ChatViewController.swift */,
 			);
 			path = ChatCDPTH;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA541FC1E9F199A00291DE8 /* LoginViewController.swift in Sources */,
+				9EA541FE1E9F24A000291DE8 /* ChatViewController.swift in Sources */,
 				88A797101E9F172A0045F262 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

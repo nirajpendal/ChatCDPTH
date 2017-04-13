@@ -43,10 +43,22 @@ class LoginViewController: UIViewController {
             return
         }
         
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "Navigation")
+        self.present(controller, animated: true, completion: nil)
+        
+        return
+            
         PFUser.logInWithUsername(inBackground: username, password:pwd) { (user:PFUser?, error:Error?) in
+            
+            
             if user != nil {
                 // Do stuff after successful login.
                 print("Success Login")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "ChatViewController")
+                self.present(controller, animated: true, completion: nil)
             } else {
                self.displayAlertWithMessage(title: "Login", message: (error?.localizedDescription)!)
                 print("Failed Login")
@@ -77,38 +89,12 @@ class LoginViewController: UIViewController {
         
         
     }
-    /*
-     // MARK: - Navigation
+         // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
-     }
-     */
-    //    @IBAction func loginAction(_ sender: Any) {
-    //    }
-    //
-    //    @IBAction func signupAction(_ sender: Any) {
-    //
-    //        var user = PFUser()
-    //        user.username = userName.text
-    //        user.password = userPassword.text
-    //        user.email = userName.text
-    //
-    //
-    //        user.signUpInBackground { (success: Bool, error) in
-    //            print(error?.localizedDescription)
-    //        }
-    //
-    ////        user.signUpInBackgroundWithBlock {
-    ////            (succeeded: Bool, error: NSError?) -> Void in
-    ////            if let error = error {
-    ////                let errorString = error.userInfo["error"] as? NSString
-    ////                // Show the errorString somewhere and let the user try again.
-    ////            } else {
-    ////                // Hooray! Let them use the app now.
-    ////            }
-    ////        }
-    //    }
+        
+    }
 }
