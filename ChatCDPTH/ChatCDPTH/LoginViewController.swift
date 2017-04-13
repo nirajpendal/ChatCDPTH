@@ -42,13 +42,6 @@ class LoginViewController: UIViewController {
         guard let pwd = pwdlabel.text else {
             return
         }
-        
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Navigation")
-        self.present(controller, animated: true, completion: nil)
-        
-        return
             
         PFUser.logInWithUsername(inBackground: username, password:pwd) { (user:PFUser?, error:Error?) in
             

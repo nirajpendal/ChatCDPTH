@@ -11,11 +11,15 @@ import Parse
 
 class ChatViewController: UIViewController {
 
+    var messages:[String] = []
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var chatText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -23,14 +27,23 @@ class ChatViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func fetchMessages() {
+        
+    }
+    
+    
     @IBAction func sendButtonTapped(_ sender: Any) {
         
         let chat = chatText.text!
         let message = PFObject(className: "Message")
         message["text"] = chat
-        message.saveInBackground { (success:Bool, error:Error?) in
+        message.saveInBackground { [weak self] (success:Bool, error:Error?) in
             if (success) {
                print(chat)
+                
+                self?.messages.append(chat)
+                self?.tableView.reloadData()
                 
             } else {
                
@@ -49,4 +62,22 @@ class ChatViewController: UIViewController {
     }
     */
 
+}
+
+extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
+        
+        cell.textLabel?.text = self.messages[indexPath.row]
+        cell.textLabel?.numberOfLines = 0
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return  self.messages.count
+    }
+    
 }
