@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		88A797101E9F172A0045F262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7970F1E9F172A0045F262 /* AppDelegate.swift */; };
-		88A797121E9F172A0045F262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A797111E9F172A0045F262 /* ViewController.swift */; };
 		88A797151E9F172A0045F262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A797131E9F172A0045F262 /* Main.storyboard */; };
 		88A797171E9F172A0045F262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A797161E9F172A0045F262 /* Assets.xcassets */; };
 		88A7971A1E9F172A0045F262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A797181E9F172A0045F262 /* LaunchScreen.storyboard */; };
+		9EA541FC1E9F199A00291DE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA541FB1E9F199A00291DE8 /* LoginViewController.swift */; };
 		BA5F95AC5DAA70320A952B0F /* Pods_ChatCDPTH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDA53D623285F963B4BBC2D /* Pods_ChatCDPTH.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +20,11 @@
 		66D6AC9679403B63C270BEA1 /* Pods-ChatCDPTH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatCDPTH.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatCDPTH/Pods-ChatCDPTH.release.xcconfig"; sourceTree = "<group>"; };
 		88A7970C1E9F172A0045F262 /* ChatCDPTH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatCDPTH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7970F1E9F172A0045F262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88A797111E9F172A0045F262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88A797141E9F172A0045F262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88A797161E9F172A0045F262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A797191E9F172A0045F262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88A7971B1E9F172A0045F262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA541FB1E9F199A00291DE8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5BED730D46EAE2112728A5B /* Pods-ChatCDPTH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatCDPTH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatCDPTH/Pods-ChatCDPTH.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,11 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				88A7970F1E9F172A0045F262 /* AppDelegate.swift */,
-				88A797111E9F172A0045F262 /* ViewController.swift */,
 				88A797131E9F172A0045F262 /* Main.storyboard */,
 				88A797161E9F172A0045F262 /* Assets.xcassets */,
 				88A797181E9F172A0045F262 /* LaunchScreen.storyboard */,
 				88A7971B1E9F172A0045F262 /* Info.plist */,
+				9EA541FB1E9F199A00291DE8 /* LoginViewController.swift */,
 			);
 			path = ChatCDPTH;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A797121E9F172A0045F262 /* ViewController.swift in Sources */,
+				9EA541FC1E9F199A00291DE8 /* LoginViewController.swift in Sources */,
 				88A797101E9F172A0045F262 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +378,7 @@
 				88A797201E9F172A0045F262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
