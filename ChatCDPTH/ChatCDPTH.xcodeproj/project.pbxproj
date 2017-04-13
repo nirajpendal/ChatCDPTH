@@ -12,9 +12,12 @@
 		88A797151E9F172A0045F262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A797131E9F172A0045F262 /* Main.storyboard */; };
 		88A797171E9F172A0045F262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A797161E9F172A0045F262 /* Assets.xcassets */; };
 		88A7971A1E9F172A0045F262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A797181E9F172A0045F262 /* LaunchScreen.storyboard */; };
+		BA5F95AC5DAA70320A952B0F /* Pods_ChatCDPTH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDA53D623285F963B4BBC2D /* Pods_ChatCDPTH.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CDA53D623285F963B4BBC2D /* Pods_ChatCDPTH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatCDPTH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D6AC9679403B63C270BEA1 /* Pods-ChatCDPTH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatCDPTH.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatCDPTH/Pods-ChatCDPTH.release.xcconfig"; sourceTree = "<group>"; };
 		88A7970C1E9F172A0045F262 /* ChatCDPTH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatCDPTH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7970F1E9F172A0045F262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A797111E9F172A0045F262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		88A797161E9F172A0045F262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A797191E9F172A0045F262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88A7971B1E9F172A0045F262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5BED730D46EAE2112728A5B /* Pods-ChatCDPTH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatCDPTH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatCDPTH/Pods-ChatCDPTH.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5F95AC5DAA70320A952B0F /* Pods_ChatCDPTH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32FADC892122FD9D603A2A58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5BED730D46EAE2112728A5B /* Pods-ChatCDPTH.debug.xcconfig */,
+				66D6AC9679403B63C270BEA1 /* Pods-ChatCDPTH.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68603BD1A446E9D270562E15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA53D623285F963B4BBC2D /* Pods_ChatCDPTH.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88A797031E9F172A0045F262 = {
 			isa = PBXGroup;
 			children = (
 				88A7970E1E9F172A0045F262 /* ChatCDPTH */,
 				88A7970D1E9F172A0045F262 /* Products */,
+				32FADC892122FD9D603A2A58 /* Pods */,
+				68603BD1A446E9D270562E15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88A7971E1E9F172A0045F262 /* Build configuration list for PBXNativeTarget "ChatCDPTH" */;
 			buildPhases = (
+				9DE33DE4B60CA3CE765BE3D8 /* [CP] Check Pods Manifest.lock */,
 				88A797081E9F172A0045F262 /* Sources */,
 				88A797091E9F172A0045F262 /* Frameworks */,
 				88A7970A1E9F172A0045F262 /* Resources */,
+				D71051846BFE9F0C77E54F48 /* [CP] Embed Pods Frameworks */,
+				61BF7D80A5344BEF7E73AFB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61BF7D80A5344BEF7E73AFB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatCDPTH/Pods-ChatCDPTH-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE33DE4B60CA3CE765BE3D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D71051846BFE9F0C77E54F48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatCDPTH/Pods-ChatCDPTH-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88A797081E9F172A0045F262 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		88A7971F1E9F172A0045F262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5BED730D46EAE2112728A5B /* Pods-ChatCDPTH.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChatCDPTH/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		88A797201E9F172A0045F262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D6AC9679403B63C270BEA1 /* Pods-ChatCDPTH.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChatCDPTH/Info.plist;
